@@ -1,0 +1,37 @@
+<!-- -- Register Box Start ---->
+<div class="promoheader">
+  <div class="promogradient-overlay">
+    <div class="body-blend-overlay">
+      <div class="container">
+        <div class="inner">
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cta2">
+
+                  <img class="img-responsive" alt="responsive" src="
+         https://github.com/GeorgeVees/home/blob/main/playbet-button.png?raw=true">
+ <h2>Welcome to Playbet</h2>
+                
+<div class="playbet-playbet-carousel-container">
+  <div class="playbet-carousel-playbet-slide">
+    <div class="playbet-slide">
+      <img src="https://raw.githubusercontent.com/GeorgeVees/homepage/a611538d81ac1ef52dacaac028d17db1311f4c1c/side-bet-city-evolution.jpg" alt="playbet-slide 1">
+    </div>
+    <div class="playbet-slide">
+      <img src="https://raw.githubusercontent.com/GeorgeVees/homepage/a611538d81ac1ef52dacaac028d17db1311f4c1c/lightning-roulette-evolution.jpg" alt="playbet-slide 2">
+    </div>
+    <div class="playbet-slide">
+      <img src="https://raw.githubusercontent.com/GeorgeVees/homepage/a611538d81ac1ef52dacaac028d17db1311f4c1c/dream-catcher-evolution.jpg" alt="playbet-slide 3">
+    </div>
+    <div class="playbet-slide">
+      <img src="https://raw.githubusercontent.com/GeorgeVees/homepage/a611538d81ac1ef52dacaac028d17db1311f4c1c/side-bet-city-evolution.jpg" alt="playbet-slide 4">
+    </div>
+    <div class="playbet-slide">
+      <img src="https://raw.githubusercontent.com/GeorgeVees/homepage/a611538d81ac1ef52dacaac028d17db1311f4c1c/lightning-roulette-evolution.jpg" alt="playbet-slide 5">
+    </div>
+  </div>
+  <div class="prev">&#10094;</div>
+  <div class="next">&#10095;</div>
+</div>
