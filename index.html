@@ -68,6 +68,101 @@
   }
 }
 </style>
+<script>
+  var slideIndex = 0;
+showSlides();
+
+// set autoplay interval
+var autoplayInterval = setInterval(function() {
+  plusSlides(1);
+}, 3000);
+
+// function to change slide
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// function to show specific slide
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// function to display slides
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("playbet-slide");
+  var dots = document.getElementsByClassName("dot");
+  var halfSlideCount = Math.floor((slides.length + 1) / 2);
+
+  // wrap slide index if it exceeds slide count
+  if (slideIndex > slides.length - halfSlideCount) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = slides.length - halfSlideCount;
+  }
+
+  // hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // remove active class from all dots
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // display two and a half slides
+  for (i = slideIndex; i < slideIndex + halfSlideCount; i++) {
+    if (slides[i]) {
+      slides[i].style.display = "block";
+    }
+  }
+
+  // add active class to current dot
+  if (dots[slideIndex]) {
+    dots[slideIndex].className += " active";
+  }
+}
+
+// add event listeners for touch swipes
+var touchStartX, touchEndX;
+var carouselContainer = document.querySelector(".playbet-playbet-carousel-container");
+carouselContainer.addEventListener("touchstart", function(event) {
+  touchStartX = event.changedTouches[0].screenX;
+});
+carouselContainer.addEventListener("touchend", function(event) {
+  touchEndX = event.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+// function to handle touch swipes
+function handleSwipe() {
+  var xDiff = touchStartX - touchEndX;
+  if (xDiff > 0) {
+    plusSlides(1);
+  } else if (xDiff < 0) {
+    plusSlides(-1);
+  }
+}
+
+// add event listeners for arrow clicks
+var prevArrow = document.querySelector(".prev");
+var nextArrow = document.querySelector(".next");
+prevArrow.addEventListener("click", function() {
+  plusSlides(-1);
+});
+nextArrow.addEventListener("click", function() {
+  plusSlides(1);
+});
+
+// add event listeners for dot clicks
+var dots = document.getElementsByClassName("dot");
+for (var i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function() {
+    currentSlide(Array.prototype.indexOf.call(dots, this));
+  });
+}
+</script>
 <div class="playbet-playbet-carousel-container">
   <div class="playbet-carousel-playbet-slide">
     <div class="playbet-slide">
