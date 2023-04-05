@@ -1,19 +1,4 @@
-<!-- -- Register Box Start ---->
-<div class="promoheader">
-  <div class="promogradient-overlay">
-    <div class="body-blend-overlay">
-      <div class="container">
-        <div class="inner">
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <div class="cta2">
-
-                  <img class="img-responsive" alt="responsive" src="
-         https://github.com/GeorgeVees/home/blob/main/playbet-button.png?raw=true">
- <h2>Welcome to Playbet</h2>
-                
+              
 <div class="playbet-playbet-carousel-container">
   <div class="playbet-carousel-playbet-slide">
     <div class="playbet-slide">
@@ -35,3 +20,73 @@
   <div class="prev">&#10094;</div>
   <div class="next">&#10095;</div>
 </div>
+
+<style>
+  .playbet-playbet-carousel-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width:1200px;
+  border-radius: 10px;
+}
+
+.playbet-carousel-playbet-slide {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.playbet-slide {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 2px;
+  text-align: center;
+
+  
+}
+
+.playbet-slide img {
+  max-width: 100%;
+  height: auto;
+    border-radius: 10px;
+}
+
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+  .playbet-slide {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .playbet-slide {
+    flex: 0 0 40%;
+    margin-right: 0;
+  }
+}
+</style>
